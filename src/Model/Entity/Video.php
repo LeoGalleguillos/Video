@@ -30,11 +30,6 @@ class Video
         return $this->rootRelativeUrl;
     }
 
-    public function getTitle() : string
-    {
-        return $this->title;
-    }
-
     public function getVideoId() : int
     {
         return $this->taskId;
