@@ -7,7 +7,7 @@ use LeoGalleguillos\User\Model\Entity as UserEntity;
 
 class Video
 {
-    protected $businessId;
+    protected $durationMilliseconds;
     protected $created;
     protected $rru;
     protected $taskStatusEntity;
@@ -15,14 +15,14 @@ class Video
     protected $userId;
     protected $views;
 
-    public function getBusinessId() : int
-    {
-        return $this->businessId;
-    }
-
     public function getCreated() : DateTime
     {
         return $this->created;
+    }
+
+    public function getDurationMilliseconds(): int
+    {
+        return $this->durationMilliseconds;
     }
 
     public function getRootRelativeUrl(): string
@@ -60,15 +60,15 @@ class Video
         return $this->views;
     }
 
-    public function setBusinessId(int $businessId) : VideoEntity\Video
-    {
-        $this->businessId = $businessId;
-        return $this;
-    }
-
     public function setCreated(DateTime $created) : VideoEntity\Video
     {
         $this->created = $created;
+        return $this;
+    }
+
+    public function setDurationMilliseconds(int $durationMilliseconds): VideoEntity\Video
+    {
+        $this->durationMilliseconds = $durationMilliseconds;
         return $this;
     }
 
