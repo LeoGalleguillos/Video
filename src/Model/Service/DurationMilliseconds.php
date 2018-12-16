@@ -7,7 +7,7 @@ class DurationMilliseconds
 {
     public function getDurationMilliseconds(string $videoPath): int
     {
-        $patter = '|^/home/amazon/products/videos/\w+\.mp4$|';
+        $pattern = '|^/home/amazon/products/videos/\w+\.mp4$|';
         if (!preg_match($pattern, $videoPath)) {
             throw new Exception('Invalid video path (this should never happen)');
         }
