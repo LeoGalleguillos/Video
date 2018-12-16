@@ -24,6 +24,9 @@ class Module
     {
         return [
             'factories' => [
+                VideoService\DurationMilliseconds::class => function ($sm) {
+                    return new VideoService\DurationMilliseconds();
+                },
             ],
         ];
     }
