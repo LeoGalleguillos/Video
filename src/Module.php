@@ -13,8 +13,12 @@ class Module
         return [
             'view_helpers' => [
                 'aliases' => [
+                    'getSchemaOrgArray' => VideoHelper\SchemaOrgArray::class,
                 ],
                 'factories' => [
+                    VideoHelper\SchemaOrgArray::class => function ($sm) {
+                        return new VideoHelper\SchemaOrgArray();
+                    },
                 ],
             ],
         ];
