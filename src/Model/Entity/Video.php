@@ -15,7 +15,7 @@ class Video
     protected $userId;
     protected $views;
 
-    public function getCreated() : DateTime
+    public function getCreated(): DateTime
     {
         return $this->created;
     }
@@ -30,37 +30,37 @@ class Video
         return $this->rootRelativeUrl;
     }
 
-    public function getVideoId() : int
+    public function getVideoId(): int
     {
         return $this->taskId;
     }
 
-    public function getVideoStatusEntity() : VideoEntity\VideoStatus
+    public function getVideoStatusEntity(): VideoEntity\VideoStatus
     {
         return $this->taskStatusEntity;
     }
 
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
 
-    public function getUserEntity() : UserEntity\User
+    public function getUserEntity(): UserEntity\User
     {
         return $this->userEntity;
     }
 
-    public function getUserId() : int
+    public function getUserId(): int
     {
         return $this->userId;
     }
 
-    public function getViews() : int
+    public function getViews(): int
     {
         return $this->views;
     }
 
-    public function setCreated(DateTime $created) : VideoEntity\Video
+    public function setCreated(DateTime $created): VideoEntity\Video
     {
         $this->created = $created;
         return $this;
@@ -72,7 +72,7 @@ class Video
         return $this;
     }
 
-    public function setName(string $name) : VideoEntity\Video
+    public function setName(string $name): VideoEntity\Video
     {
         $this->name = $name;
         return $this;
@@ -84,7 +84,7 @@ class Video
         return $this;
     }
 
-    public function setVideoId(int $taskId) : VideoEntity\Video
+    public function setVideoId(int $taskId): VideoEntity\Video
     {
         $this->taskId = $taskId;
         return $this;
@@ -92,7 +92,7 @@ class Video
 
     public function setVideoStatusEntity(
         VideoEntity\VideoStatus $taskStatusEntity
-    ) : VideoEntity\Video {
+    ): VideoEntity\Video {
         $this->taskStatusEntity = $taskStatusEntity;
         return $this;
     }
@@ -103,19 +103,19 @@ class Video
         return $this;
     }
 
-    public function setUserEntity(UserEntity\User $userEntity) : VideoEntity\Video
+    public function setUserEntity(UserEntity\User $userEntity): VideoEntity\Video
     {
         $this->userEntity = $userEntity;
         return $this;
     }
 
-    public function setUserId(int $userId) : VideoEntity\Video
+    public function setUserId(int $userId): VideoEntity\Video
     {
         $this->userId = $userId;
         return $this;
     }
 
-    public function setViews(int $views) : VideoEntity\Video
+    public function setViews(int $views): VideoEntity\Video
     {
         $this->views = $views;
         return $this;
